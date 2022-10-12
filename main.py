@@ -1,11 +1,9 @@
 # Iterating through a string
 
-string = 'taco cat'
+n="i am laxmi"
+s=n.split(" ")
 
-def palindrome(string_to_check):
-    if string.lower().replace(' ', '') == string.lower().replace(' ', '')[::-1]:
-        print("You found a palindrome!")
-    else:
-        print("Your string isn't a palindrome")
+for i in s:
 
-palindrome(string)
+  if len(i)%2==0:
+    print(i)
