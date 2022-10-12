@@ -1,9 +1,4 @@
-
-string = "geeks quiz practice code"
-s = string.split()[::-1]
-l = []
-for i in s:
-
-    l.append(i)
-
-print(" ".join(l))
+a, b = input(), input()
+for character in a:
+	b = b.replace(character, '', 1)
+print(b)
