@@ -1,12 +1,5 @@
-str1 = "PYnAtivE"
-print('Original String:', str1)
-lower = []
-upper = []
-for char in str1:
-    if char.islower():
-        lower.append(char)
-    else:
-        upper.append(char)
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+print("Original String is:", str1)
 
-sorted_str = ''.join(lower + upper)
-print('Result:', sorted_str)
+index = str1.rfind("Emma")
+print("Last occurrence of Emma starts at index:", index)
