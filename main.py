@@ -1,5 +1,7 @@
-str1 = "Emma is a data scientist who knows Python. Emma works at google."
-print("Original String is:", str1)
+def strip_chars(str, chars):
+    return "".join(c for c in str if c not in chars)
 
-index = str1.rfind("Emma")
-print("Last occurrence of Emma starts at index:", index)
+print("\nOriginal String: ")
+print("The quick brown fox jumps over the lazy dog.")
+print("After stripping a,e,i,o,u")
+print(strip_chars("The quick brown fox jumps over the lazy dog.", "aeiou"))
