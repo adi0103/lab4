@@ -1,16 +1,11 @@
 # Iterating through a string
-string = "    Apple Apple Apple no apple in the box apple apple             "
 
-stripped_string = string.strip()
-print(stripped_string)
+string = 'taco cat'
 
-left_stripped_string = (
-    stripped_string
-    .lstrip('Apple')
-    .lstrip()
-    .lstrip('Apple')
-    .lstrip()
-    .lstrip('Apple')
-    .lstrip()
-)
-print(left_stripped_string)
+def palindrome(string_to_check):
+    if string.lower().replace(' ', '') == string.lower().replace(' ', '')[::-1]:
+        print("You found a palindrome!")
+    else:
+        print("Your string isn't a palindrome")
+
+palindrome(string)
