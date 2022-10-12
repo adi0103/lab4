@@ -1,7 +1,7 @@
-def strip_chars(str, chars):
-    return "".join(c for c in str if c not in chars)
-
-print("\nOriginal String: ")
-print("The quick brown fox jumps over the lazy dog.")
-print("After stripping a,e,i,o,u")
-print(strip_chars("The quick brown fox jumps over the lazy dog.", "aeiou"))
+def test(str1):
+    result = [int(str1) for str1 in str1.split() if str1.isdigit()]
+    return result
+str1 = "red 12 black 45 green"
+print("Original string:", str1)
+print("Extract numbers from the said string:")
+print(test(str1))
